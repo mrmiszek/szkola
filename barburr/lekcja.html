@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festiwal Barburków</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        section {
+            margin: 2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .falling-img {
+            top: 0;
+            position: absolute;
+            animation: fall 7s linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(150vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Festiwal Barburków</h1>
+        <p>Odkryj piękno barburków razem z nami!</p>
+    </header>
+
+    <section>
+        <h2>O Festiwalu Barburków</h2>
+        <p>Witaj na corocznym Festiwalu Barburków, gdzie świętujemy kolorową różnorodność i unikalne cechy tych ptaków z
+            różnych zakątków świata. Dołącz do nas na dzień pełen radości, śmiechu i, oczywiście, zachwycającego piękna
+            tych wspaniałych ptaków.</p>
+    </section>
+    <section>
+        <h2>Więcej informacji</h2>
+        <p>Barbórka (dawna pisownia Barburka[1][2]), Dzień Górnika[3] – tradycyjne święto górnicze, obchodzone w Polsce
+            4 grudnia, w dniu św. Barbary z Nikomedii[4], patronki dobrej śmierci i trudnej pracy[5]. Poza górnikami
+            Barbórkę obchodzą także geolodzy i inne osoby wykonujące zawody związane z poszukiwaniem paliw kopalnych[6].
+
+            W tradycji górniczej Barbórka rozpoczyna się poranną uroczystą mszą w kościele lub w cechowni, przy figurze
+            św. Barbary. Następnie orkiestra górnicza maszeruje grając m.in. swój hymn w osiedlach zamieszkanych przez
+            górników i ich rodziny (np. familok) oraz pod domami dyrekcji. Odbywają się uroczyste akademie oraz
+            spotkania. Z okazji tego dnia organizowane są również: koncerty, występy artystyczne, zabawy oraz bale, w
+            których uczestniczą całe rodziny górnicze.</p>
+    </section>
+    <section>
+        <h2>Najważniejsze Wydarzenia</h2>
+        <p>Zwiedź hipnotyzujące pokazy barburków w ich naturalnym środowisku. Od najmniejszych detali ich piór po ich
+            zgrabne ruchy - każdy moment to uczta dla oczu.</p>
+        <img src="1.jpg" alt="Barbur Obraz 1">
+        <img src="2.jpg" alt="Barbur Obraz 2">
+    </section>
+
+    <section>
+        <h2>Dołącz do Wydarzenia</h2>
+        <p>Chcesz wziąć udział? Przynieś swojego własnego barburka i dołącz do Parady Barburków! Pokaż swojego
+            pióropusza i połącz się z innymi entuzjastami barburków.</p>
+        <img src="3.jpg" alt="Barbur Obraz 3">
+    </section>
+
+    <section>
+        <h2>Posłuchaj Hymnu Barburków</h2>
+        <audio controls>
+            <source src="hymn.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje elementu audio.
+        </audio>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            createFallingImage("wegiel.png");
+        });
+
+        function createFallingImage(imageSrc) {
+            const img = document.createElement("img");
+            img.src = imageSrc;
+            img.classList.add("falling-img");
+            img.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(img);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            createFallingImage("wegiel.png");
+        });
+
+        function createFallingImage(imageSrc) {
+            const img = document.createElement("img");
+            img.src = imageSrc;
+            img.classList.add("falling-img");
+            img.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(img);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            createFallingImage("wegiel.png");
+        });
+
+        function createFallingImage(imageSrc) {
+            const img = document.createElement("img");
+            img.src = imageSrc;
+            img.classList.add("falling-img");
+            img.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(img);
+        }
+
+    </script>
+</body>
+
+</html>
