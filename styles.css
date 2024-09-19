@@ -1,0 +1,50 @@
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: green;
+  color: white;
+}
+
+.orange-header th {
+  background-color: orange;
+  color: blue;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.center-middle {
+  text-align: center;
+  vertical-align: middle;
+}
+.spacing {
+  border: 1px solid black;
+  border-spacing: 10px 10px;
+}
+
+.right-bottom {
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.highlight {
+  background-color: #90ee90;
+}
+
+.header {
+  background-color: #2a52be;
+  color: white;
+}
