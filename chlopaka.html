@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystkiego najlepszego z okazji Dnia Chłopaka!</title>
+    <link rel="stylesheet" href="chlopaka.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="message">
+            <h1>Wszystkiego najlepszego z okazji Dnia Chłopaka! 🎉</h1>
+            <p>Niech spełniają się Twoje marzenia, a każdy dzień przynosi nowe przygody i radość! 🌟</p>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="https://www.soundjay.com/button/beep-07.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Uruchamianie muzyki w tle po wejściu na stronę
+        window.onload = function () {
+            document.getElementById('background-music').play();
+        };
+
+        // Ustawienia cząstek (particles.js)
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 150,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#ffcc00", "#ff0066", "#33ccff", "#66ff66"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#ffffff"
+                    }
+                },
+                "opacity": {
+                    "value": 0.8,
+                    "random": true
+                },
+                "size": {
+                    "value": 5,
+                    "random": true
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 4,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out"
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
